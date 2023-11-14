@@ -71,6 +71,11 @@ function images() {
     .pipe(imagemin())
     .pipe(gulp.dest('build/assets/images/'));
 }
+// fonts 
+function fonts() {
+  return gulp.src('src/fonts/*.woff')
+    .pipe(gulp.dest('build/assets/fonts/'));
+}
 
 // server
 function runServer(done) {
@@ -98,6 +103,7 @@ function runServer(done) {
 // watch files
 function watchFiles() {
     gulp.watch(['src/pages/*.html', 'src/blocks/**/*.html'], gulp.series(html, reload));
+    gulp.watch(['src/fonts/*.woff', 'src/fonts/*.woff'], gulp.series(fonts, reload));
     gulp.watch(['src/styles/**/*.scss', 'src/blocks/**/*.scss'], gulp.series(styles, reload));
     gulp.watch('src/images/**/*', gulp.series(images, reload));
     gulp.watch('src/js/*.js', gulp.series(script, reload));
@@ -109,6 +115,7 @@ const build = gulp.series (
     gulp.parallel( 
         html,
         styles,
+        fonts,
         script,
         images
     )

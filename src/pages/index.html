@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
     <title>Document</title>
 </head>
-<body>
-    @@include('../blocks/header/header.html', {"name": "Gregori"})
+<body class="body">
+    @@include('../blocks/header/header.html')
+    <main>
+        <section class="projects container">
+            <h1 class="projects__title">Проекты от ЖК "Возрождение"</h1>
+            <div class="projects__grid">
+                @@include('../blocks/project/project.html', {
+                    "projectName": "Литер 1",
+                    "projectImage": "/assets/images/project_2.jpeg",
+                    "flats": "320",
+                    "date": "2-й"
+                })
+                @@include('../blocks/project/project.html', {
+                    "projectName": "Литер 2",
+                    "projectImage": "/assets/images/project_2.jpeg",
+                    "flats": "240",
+                    "date": "3-й"
+                })
+                @@include('../blocks/project/project.html', {
+                    "projectName": "Литер 3",
+                    "projectImage": "/assets/images/project_2.jpeg",
+                    "flats": "180",
+                    "date": "4-й"
+                })
+            </div>
+        </section>
+    </main>
+    @@include('../blocks/footer/footer.html')
 </body>
 </html>

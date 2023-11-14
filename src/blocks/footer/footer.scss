@@ -1,0 +1,79 @@
+.footer {
+    background-color: $dark-blue;
+    box-sizing: border-box;
+    color: white;
+    &__top{
+        @include footer-container();
+        gap: 20px;
+    }
+    &__top-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__bold-text {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+        text-decoration: none;
+    }
+    &__text{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+    }
+    &__button {
+        color: $dark-blue;
+        padding: 30px 60px;
+        border-radius: 79px;
+        background-color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+    &__center {
+        @include footer-container (40px)
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__bottom {
+        @include footer-container(20px);
+        border-bottom: none;
+    }
+    &__conf-doc{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link {
+        color: white;
+        text-decoration: none;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social-links {
+        display: flex;
+        gap: 20px;
+    }
+
+
+    &__skroll-up {
+        display: block;
+        width: 60px;
+        height: 25px;
+        background-color: white;
+        background: url('../images/icons/Up-button.svg') center no-repeat;
+        border: none;
+        border-radius: 5px;
+    }
+}
