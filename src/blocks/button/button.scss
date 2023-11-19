@@ -1,0 +1,58 @@
+.button {
+    background: $blue-gradient;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    box-shadow: 0px -2px 0px 0px rgba(0, 32, 64, 0.10) inset, 0px 2px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 10px 0px rgba(0, 32, 64, 0.10);
+    
+    &_menu {
+        @include button-setting(10px, 10px 20px, 70px);
+        &::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url('../images/icons/Vector-burger.svg');
+            }
+        @include media(lg) {
+            display: none;
+        }
+    }
+    &_tel {
+        @include button-setting(10px, 10px 20px, 70px);
+        &::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url('../images/icons/Vector-tel.svg');
+            }
+        @include media(lg) {
+                padding: 10px;;
+            }
+    }
+    & span{
+        @include media(lg) {
+            display: none;
+        }
+    }
+
+    &_project {
+        @include button-setting (25px, 30px 60px, 10px);
+        margin: 40px auto 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url('../images/icons/Vector-calc.svg')
+            }
+    }
+
+}

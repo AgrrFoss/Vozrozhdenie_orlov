@@ -1,0 +1,20 @@
+.main-projects {
+    background-color: #F9FCFF;
+}
+.projects {
+    margin: $header-height auto 0;
+    padding-top: 40px;
+    padding-bottom: 160px;
+    &__title {
+        margin: 40px;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &__grid{
+        display: grid;
+        gap: 20px;
+    }
+}

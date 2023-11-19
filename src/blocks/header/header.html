@@ -1,4 +1,23 @@
 <header class="header">
-    <img src="assets/images/logo.svg" alt="" class="header__logo">
-    <button class="header__button">Меню</button>
+    <div class="container header__flex">
+        <a href="" class="header__logo"><img src="assets/images/logo.svg" alt=""></a>
+        <button class="button button_menu header__menu-toggle" type="button" onclick="this.classList.toggle('is-open')">Меню</button>
+        <div class="header__menu">
+            <nav class="header__menu-nav">
+                <ul class="header__menu-list">
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__menu-contacts">
+                <div class="header__contacts-text">
+                    <a href="tel:+7 982 45-22-67" class="header__tel">+7 982 45-22-67</a>
+                    <span class="header__text">Пн-Пт. с 8:00 до 19:00</span>
+                </div>
+                <button class="button button_tel"><span>Заказать звонок</span></button>
+            </div>
+        </div>
+    </div>
 </header>

@@ -1,15 +1,23 @@
 <div class="project">
-    <img src="@@projectImage" alt="" class="project__image">
-    <p class="project__name">@@projectName</p>
-    <div class="project__info-block">
-        <div class="project__info">
-            <span class="project__number">@@flats</span>
-            <span class="project__text">В продаже @@flats квартир</span>
+    <!---
+    <picture>
+        <source srcset="@@projectImageFull" media="(min-width: 1024px)"  class="project__image">
+        <img src="@@projectImage" alt=""  class="project__image">
+    </picture>
+-->
+    <img src="@@projectImage" alt=""  class="project__image">
+    <div>
+        <h2 class="project__name">@@projectName</h2>
+        <div class="project__info-block">
+            <div class="project__info">
+                <span class="project__number">@@flats</span>
+                <span class="project__text">В продаже @@flats квартир</span>
+            </div>
+            <div class="project__info">
+                <span class="project__number project__number_calendar">@@date</span>
+                <span class="project__text">Сдача @@date квартал 2022</span>
+            </div>
         </div>
-        <div class="project__info">
-            <span class="project__number project__number_calendar">@@date</span>
-            <span class="project__text">Сдача @@date квартал 2022</span>
-        </div>
+        <button class=" button button_project">Выбрать квартиру</button>
     </div>
-    <button class="project__button">Выбрать квартиру</button>
 </div>
