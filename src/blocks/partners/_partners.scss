@@ -1,0 +1,27 @@
+.partners {
+    background-color: #F9FCFF;
+    margin-bottom: 120px;
+    @include media(md) {
+        margin-bottom: 200px;
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        @include media (sm) {
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+    &__img {
+        padding: 40px;
+        width: 440px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        box-shadow: 0px 20px 20px 0px rgba(0, 63, 128, 0.05);
+        @include media (sm) {
+            width: 400px;
+        }
+    }
+}

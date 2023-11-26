@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Document</title>
+</head>
+<body class="body">
+    <header class="header">
+    <div class="container header__flex">
+        <a href="" class="header__logo"><img src="assets/images/logo.svg" alt=""></a>
+        <button class="button button_menu header__menu-toggle" type="button" onclick="this.classList.toggle('is-open')">Меню</button>
+        <div class="header__menu">
+            <nav class="header__menu-nav">
+                <ul class="header__menu-list">
+                    <li><a href="index.html">О компании</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Документы</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__menu-contacts">
+                <div class="header__contacts-text">
+                    <a href="tel:+7 982 45-22-67" class="header__tel">+7 982 45-22-67</a>
+                    <span class="header__text">Пн-Пт. с 8:00 до 19:00</span>
+                </div>
+                <button class="button button_tel"><span>Заказать звонок</span></button>
+            </div>
+        </div>
+    </div>
+</header>
+    <main class="main-projects">
+        <section class="projects container">
+            <h1 class="projects__title">Проекты от ЖК "Возрождение"</h1>
+            <div class="projects__grid">
+                <div class="project">
+    <!---
+    <picture>
+        <source srcset="assets/images/project_1_830.jpg" media="(min-width: 1024px)"  class="project__image">
+        <img src="assets/images/project_1_480.jpg" alt=""  class="project__image">
+    </picture>
+-->
+    <img src="assets/images/project_1_480.jpg" alt=""  class="project__image">
+    <div>
+        <h2 class="project__name">Литер 1</h2>
+        <div class="project__info-block">
+            <div class="project__info">
+                <span class="project__number">320</span>
+                <span class="project__text">В продаже 320 квартир</span>
+            </div>
+            <div class="project__info">
+                <span class="project__number project__number_calendar">2-й</span>
+                <span class="project__text">Сдача 2-й квартал 2022</span>
+            </div>
+        </div>
+        <button class=" button button_project">Выбрать квартиру</button>
+    </div>
+</div>
+                <div class="project">
+    <!---
+    <picture>
+        <source srcset="assets/images/project_2_830.jpg" media="(min-width: 1024px)"  class="project__image">
+        <img src="assets/images/project_1_480.jpg" alt=""  class="project__image">
+    </picture>
+-->
+    <img src="assets/images/project_1_480.jpg" alt=""  class="project__image">
+    <div>
+        <h2 class="project__name">Литер 2</h2>
+        <div class="project__info-block">
+            <div class="project__info">
+                <span class="project__number">240</span>
+                <span class="project__text">В продаже 240 квартир</span>
+            </div>
+            <div class="project__info">
+                <span class="project__number project__number_calendar">3-й</span>
+                <span class="project__text">Сдача 3-й квартал 2022</span>
+            </div>
+        </div>
+        <button class=" button button_project">Выбрать квартиру</button>
+    </div>
+</div>
+                <div class="project">
+    <!---
+    <picture>
+        <source srcset="assets/images/project_3_830.jpg" media="(min-width: 1024px)"  class="project__image">
+        <img src="assets/images/project_2_480.jpg" alt=""  class="project__image">
+    </picture>
+-->
+    <img src="assets/images/project_2_480.jpg" alt=""  class="project__image">
+    <div>
+        <h2 class="project__name">Литер 3</h2>
+        <div class="project__info-block">
+            <div class="project__info">
+                <span class="project__number">180</span>
+                <span class="project__text">В продаже 180 квартир</span>
+            </div>
+            <div class="project__info">
+                <span class="project__number project__number_calendar">4-й</span>
+                <span class="project__text">Сдача 4-й квартал 2022</span>
+            </div>
+        </div>
+        <button class=" button button_project">Выбрать квартиру</button>
+    </div>
+</div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer__top container">
+        <img src="assets/images/logo-white.svg" alt="" class="footer__logo">
+        <div class="footer__top-consultation">
+            <div class="footer__top-info">
+                <span class="footer__bold-text text-center">Остались вопросы?</span>
+                <span class="footer__text text-center">Закажите бесплатную консультацию</span>
+            </div>
+            <button class="footer__button">Заказать консультацию</button>
+        </div>
+    </div>
+    <div class="footer__center container">
+        <div class="footer__info">
+            <span class="footer__text">Телефон:</span>
+            <a href="tel:+7 982 45-22-67" class="footer__bold-text footer__link">+7 982 45-22-67</a>
+        </div>
+        <div class="footer__info">
+            <span class="footer__text">Ел. почта:</span>
+            <a href="mailto:vozrojdenie@yandex.ru" class="footer__bold-text footer__link">vozrojdenie@yandex.ru</a>
+        </div>
+        <div class="footer__info">
+            <span class="footer__text">Адрес офиса:</span>
+            <span class="footer__bold-text">Ярославская обл. Ярославль, Почтовая улица 12/2</span>
+        </div>
+        <div class="footer__info">
+            <span class="footer__text">Адрес обекта:</span>
+            <span class="footer__bold-text">Ярославская обл. Ярославль, рядом с ул. Бабича 10/22</span>
+        </div>
+    </div>
+    <div class="footer__bottom container">
+        <div class="footer__conf-doc">
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <a href="#" class="footer__link">Документы</a>
+        </div>
+        <div class="footer__buttons">
+            <div class="footer__social-links">
+                <a href="#" class="footer__link"><img src="assets/images/icons/Vector-tg.png" alt="" class="footer__link-img"></a>
+                <a href="#" class="footer__link"><img src="assets/images/icons/Vector-vk.svg" alt="" class="footer__link-img"></a>
+                <a href="#" class="footer__link"><img src="assets/images/icons/Vector-inst.svg" alt="" class="footer__link-img"></a>
+            </div>
+            <button class="footer__skroll-up"></button>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

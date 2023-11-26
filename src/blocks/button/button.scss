@@ -54,5 +54,40 @@
             background: url('../images/icons/Vector-calc.svg')
             }
     }
-
+    &_change{
+        @include button-setting(25px, 30px 60px, 79px);
+        max-width: 440px;
+        width: 100%;
+        margin: auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        &::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url('../images/icons/Vector-calc.svg')
+        }
+        @include media (md) {
+            max-width: 326px;
+        }
+    }
+    &_consultation {
+        @include button-setting(25px, 30px 60px, 79px);
+        max-width: 440px;
+        width: 100%;
+        margin: auto;
+        background: white;
+        color: $blue-dark;
+        border: 1px solid $blue-dark;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    @include media (md) {
+        max-width: 326px;
+    }
 }
