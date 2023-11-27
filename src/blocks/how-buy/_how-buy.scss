@@ -1,21 +1,37 @@
 .buy {
     margin-top: 120px;
-
+    background-color: #fff;
+    
     @include media (md) {
         margin-top: 160px;
     }
-
+    &__section-title {
+        background-color: $blue-bg;
+        padding-bottom: 60px;
+        margin-bottom: 0;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    
     &__grid {
         padding: 20px;
         display: grid;
         gap: 20px;
-        background-color: #fff;
 
         @include media (md) {
             padding: 40px;
+            grid-template-columns: 2fr 1fr;
+            align-items: stretch;
+            align-content: center;
         }
     }
-
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
     &__item {
         padding: 40px;
         display: flex;
@@ -61,6 +77,10 @@
         padding: 40px;
         text-align: center;
         background-color: $blue-light;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         &-title{
             font-size: 24px;

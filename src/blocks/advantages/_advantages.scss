@@ -12,7 +12,11 @@
         }
     }
     &__grid{
+        width: 100%;
         display: grid;
+        grid-template-columns: (auto-fit, minmax(300px, 400px));
+        // grid-template-rows: minmax(200px, 400px);
+        // grid-auto-rows: minmax(200px, 400px);
         grid-gap: 20px;
 
         @include media(sm){

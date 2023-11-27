@@ -1,20 +1,23 @@
 .advantage{
     position: relative;
     width: 100%;
+    height: auto;
     border-radius: 10px;
     overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
 
-    @include media(sm) {
+    @include media(lg) {
         width: 400px;
         height: 400px;
         cursor: pointer;
+        &:hover .advantage__text{
+            max-height: 200px;
+          }
+        &:hover .advantage__bg::after {
+            opacity: .5;
+          }
     }
-    &:hover .advantage__text{
-        max-height: 200px;
-      }
-      &:hover .advantage__bg::after {
-        opacity: .5;
-      }
 
     &__bg{
         position: absolute;

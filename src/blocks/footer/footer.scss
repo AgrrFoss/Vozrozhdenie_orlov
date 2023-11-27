@@ -2,6 +2,9 @@
     background-color: $blue-dark;
     box-sizing: border-box;
     color: white;
+    @include media (md){
+        padding: 0 10px;
+    }
     &__top{
         @include footer-container(0);
         gap: 20px;
