@@ -79,7 +79,7 @@
         max-width: 440px;
         width: 100%;
         margin: auto;
-        background: white;
+        background: none;
         color: $blue-dark;
         border: 1px solid $blue-dark;
         font-size: 16px;
@@ -90,4 +90,19 @@
     @include media (md) {
         max-width: 326px;
     }
+    &_questions {
+        @include button-setting(25px, 30px 60px, 79px);
+        max-width: 327px;
+        width: 100%;
+        margin: 30px auto 0;
+
+    }
+    &_planing {
+        @include button-setting(25px, 30px 60px, 79px);
+        max-width: 301px;
+        width: 100%;
+        margin: 20px auto 0;
+
+    }
+
 }

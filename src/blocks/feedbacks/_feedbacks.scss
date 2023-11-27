@@ -1,0 +1,56 @@
+.feedbacks {
+    padding: 120px 0 100px;
+    background-color: #F9FCFF;
+    @include media (sm) {
+        padding: 160px 0;
+    }
+
+    &__block{}
+}
+
+.feedback {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 63, 128, 0.05);
+
+
+    @include media (sm){
+        max-width: 620px;
+    }
+
+    &__iser-info {
+        display: flex;
+        gap: 20px;
+    }
+    &__avatar {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name {
+        margin: 0;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__desc {
+        margin: 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__content {
+        margin: 20px auto 0;
+    }
+}

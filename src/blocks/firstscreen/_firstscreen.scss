@@ -1,5 +1,8 @@
+.screen {
+    background: linear-gradient(0deg, rgba(249, 252, 255, 0.95) 0%, rgba(249, 252, 255, 0.95) 100%), url(../images/first_screen_bg.jpg), lightgray 50% / cover no-repeat;
+}
 .screen__bg{
-    padding-bottom: 80px;
+    padding-bottom: 79px;
     @include media (md) {
         height: 700px;
         background: url('../images/Bgbig.jpg') center no-repeat;

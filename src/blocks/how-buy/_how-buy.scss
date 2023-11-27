@@ -1,0 +1,87 @@
+.buy {
+    margin-top: 120px;
+
+    @include media (md) {
+        margin-top: 160px;
+    }
+
+    &__grid {
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        background-color: #fff;
+
+        @include media (md) {
+            padding: 40px;
+        }
+    }
+
+    &__item {
+        padding: 40px;
+        display: flex;
+        align-items: start;
+        gap: 40px;
+        border-radius: 20px;
+        background-color: $blue-light;
+    }
+    &__icon {
+        padding: 30px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background: $blue-gradient;
+        flex-shrink: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+        display: block;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__info-block {
+        flex-shrink: 3;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__desc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__questions {
+        padding: 40px;
+        text-align: center;
+        background-color: $blue-light;
+
+        &-title{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        &-text{
+            margin: 20px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    &__tel {
+    margin: 20px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+}
