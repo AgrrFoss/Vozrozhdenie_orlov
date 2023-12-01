@@ -64,6 +64,12 @@ function script(){
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('build/assets/js/'))
 }
+//devDepencies 
+function copyDevendencies() {
+  return gulp.src(['node_modules/swiper/swiper-bundle.min.js'])
+  .pipe(gulp.dest('build/assets/js/'));
+}
+
 
 // images
 function images() {
@@ -115,6 +121,7 @@ const build = gulp.series (
     gulp.parallel( 
         html,
         styles,
+        copyDevendencies,
         fonts,
         script,
         images
