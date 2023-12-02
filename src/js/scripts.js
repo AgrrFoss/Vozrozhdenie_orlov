@@ -5,16 +5,13 @@ var sliderGallery = new Swiper('.photos', {
       prevEl: '.swiper-button-prev',
     },
 
-    slidesPerView: 1.1,
+    slidesPerView: 1.3,
     spaceBetween: 20,
     centeredSlides: true,
     centerInsufficientSlides: true,
-    initialSlide: 1,
+    initialSlide: 2,
     loop: true,
     speed: 500,
-    autoplay: {
-      delay: 3000,
-    },
     observed: true,
     observedParents: true,
     observedChidren: true,
@@ -23,12 +20,10 @@ var sliderGallery = new Swiper('.photos', {
         slidesPerView: 2.5,
         spaceBetween: 40,
         centeredSlides: true,
-        centeredSlides: true,
       },  
       1024: {
         slidesPerView: 3,
         spaceBetween: 40,
-        centeredSlides: true,
         centeredSlides: true,
         
       }
@@ -37,11 +32,11 @@ var sliderGallery = new Swiper('.photos', {
     });
 
   const sliderFeedback = new Swiper ('.feedbacks-swiper', {
-    slidesPerView: 1,
+  
+    slidesPerView: 1.1,
     centeredSlides: true,
     autoplay: {
       delay: 3000,
     },
-    loop: true,
     
   })
